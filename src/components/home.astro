@@ -1,0 +1,81 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import CONTACTS from '~/static/contact'
+import IMAGE_LINKS from '~/static/img-links'
+import '~/styles/home.css'
+---
+
+<section class='home section' id='home'>
+	<div class='intro'>
+		<Image
+			inferSize
+			loading='eager'
+			alt='logo'
+			crossorigin='anonymous'
+			src={IMAGE_LINKS.logo}
+		/>
+		<h1>ENWELUM CHIAMAKA</h1>
+		<span>DATA ANALYST</span>
+		<ul class='social-icons'>
+			<li>
+				<a
+					aria-label='github'
+					href={CONTACTS.github}
+					rel='noreferrer'
+					target='_blank'
+				>
+					<Icon name='home-github' />
+				</a>
+			</li>
+			<li>
+				<a
+					aria-label='linkedin'
+					href={CONTACTS.linkedin}
+					rel='noreferrer'
+					target='_blank'
+				>
+					<Icon name='home-linkedin' />
+				</a>
+			</li>
+			<li>
+				<a
+					aria-label='x'
+					href={CONTACTS.twitter}
+					rel='noreferrer'
+					target='_blank'
+				>
+					<Icon name='home-twitter' />
+				</a>
+			</li>
+			<li>
+				<a
+					aria-label='send mail'
+					href={`mailto:${CONTACTS.email}`}
+					rel='noreferrer'
+					target='_blank'
+				>
+					<Icon name='home-email' />
+				</a>
+			</li>
+			<li>
+				<a
+					aria-label='whatsapp'
+					href={`https://wa.me/${CONTACTS.phoneNumber.replace(/ /g, '')}`}
+					rel='noreferrer'
+					target='_blank'
+				>
+					<Icon name='home-whatsapp' />
+				</a>
+			</li>
+		</ul>
+
+		<div class='btn btn-default'>
+			<a href='#contact'>Contact me</a>
+		</div>
+	</div>
+	<div class='scroll-down'>
+		<h2>Scroll For More</h2>
+		<Icon name='home-scroll-down' height={24} />
+	</div>
+</section>

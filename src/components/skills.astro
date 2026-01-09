@@ -1,0 +1,51 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import SKILLS from '~/static/skills'
+
+import '~/styles/skills.css'
+---
+
+<section class='skills section' id='skills'>
+	<div class='container'>
+		<h2 class='section-title px-15'>Skills</h2>
+
+		<div class='skills-container'>
+			{
+				SKILLS.map(({ catName, skills, catImageName }, index) => (
+					<>
+						<input
+							name='skill-tab-radio'
+							type='radio'
+							class='skills-tabs-radio'
+							id={catName}
+							checked={index === 0}
+						/>
+						<label for={catName} class='skills-tab'>
+							<Icon name={catImageName} size='2rem' />
+							<h1 class='skills-title'>{catName}</h1>
+						</label>
+						<div class='skills-group'>
+							{skills.map((skill) => (
+								<div class='skill-container'>
+									<Image
+										class:list={{
+											'skill-image': !skill.dark,
+										}}
+										src={skill.image}
+										alt={skill.name}
+										width={52}
+										height={52}
+										loading='lazy'
+										crossorigin='anonymous'
+									/>
+									<h3 class='skill-name'>{skill.name}</h3>
+								</div>
+							))}
+						</div>
+					</>
+				))
+			}
+		</div>
+	</div>
+</section>

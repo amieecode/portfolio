@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon/components'
+import ABOUT from '~/static/about'
+import '~/styles/about.css'
+---
+
+<section class='about section' id='about'>
+	<div class='container'>
+		<h2 class='section-title px-15'>About Me</h2>
+		<div class='about-content'>
+			<p class='about-text'>{ABOUT.introduction}</p>
+			<div class='btn btn-default'>
+				<a
+					aria-label='download resume'
+					href='/portfolio/docs/enwelum_resume.pdf'
+					download='enwelum_resume.pdf'
+					target='_blank'
+				>
+					DOWNLOAD RESUME
+				</a>
+			</div>
+		</div>
+
+		<div class='row stats-items'>
+			<div class='stats-item px-15'>
+				<Icon name='about-projects-done' size='1.5rem' />
+				<div class='details'>
+					<h3>{ABOUT.projectsDone}</h3>
+					<p>Projects Done</p>
+				</div>
+			</div>
+			<div class='stats-item px-15'>
+				<Icon name='about-github-commits' size='1.5rem' />
+				<div class='details'>
+					<h3>{ABOUT.gitHubCommits}</h3>
+					<p>GitHub Commits</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

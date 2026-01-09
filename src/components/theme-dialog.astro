@@ -1,0 +1,58 @@
+---
+import THEME_DATA from '~/static/theme'
+import '~/styles/theme-dialog.css'
+---
+
+<dialog id='theme-dialog' class='theme-dialog'>
+	<h2>Customize The Theme</h2>
+	<p>Manage the font size, color and theme mode.</p>
+
+	<div class='theme-font-size'>
+		<h3>Font Size</h3>
+		<div class='theme-font-size-slider'>
+			<h6>Aa</h6>
+			<div>
+				{
+					THEME_DATA.fontSizes.map((val) => (
+						<button
+							aria-label={`font-${val}`}
+							data-font-size={val}
+							class='font-size-btn'
+						/>
+					))
+				}
+			</div>
+			<h3>Aa</h3>
+		</div>
+	</div>
+
+	<div class='theme-color'>
+		<h3>Color</h3>
+		<div>
+			{
+				THEME_DATA.primary.map((val) => (
+					<button
+						aria-label={`primary-${val}`}
+						data-primary={val}
+						class='primary-btn'
+					/>
+				))
+			}
+		</div>
+	</div>
+
+	<div class='theme-background'>
+		<h3>Theme Mode</h3>
+		<div>
+			{
+				THEME_DATA.bg.map((val) => (
+					<button data-bg={val} class='bg-btn'>
+						{val}
+					</button>
+				))
+			}
+		</div>
+	</div>
+</dialog>
+
+<script src='~/scripts/theme-dialog'></script>

@@ -1,0 +1,107 @@
+.theme-dialog::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.theme-dialog {
+	background: var(--color-base-200);
+	color: var(--color-base-content);
+	border-color: var(--color-base-200);
+	text-align: center;
+	font-size: var(--small-font-size);
+	padding: 3rem;
+	border-radius: var(--card-border-radius);
+	width: 95%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.theme-font-size {
+	margin-top: var(--m-2-5);
+}
+
+.theme-font-size-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--color-base-200);
+	border-radius: var(--card-border-radius);
+	padding: 0.6rem 1rem;
+}
+
+.theme-font-size-slider div {
+	background: #d6ccff;
+	height: 0.35rem;
+	width: 100%;
+	margin: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.theme-font-size-slider div button {
+	width: 1rem;
+	height: 1rem;
+	background-color: #d6ccff;
+	border-radius: 50%;
+}
+
+.theme-font-size-slider div button.active {
+	background: var(--color-primary);
+}
+
+.theme-color {
+	margin-top: var(--m-2);
+}
+
+.theme-color div {
+	background: var(--color-base-200);
+	border-radius: var(--card-border-radius);
+	padding: 0.6rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.theme-color div button {
+	width: 1.8rem;
+	height: 1.8rem;
+	background: var(--color-primary);
+	border-radius: 50%;
+}
+
+.theme-color div button.active {
+	border: 0.25em solid #d6ccff;
+}
+
+.theme-background {
+	margin-top: var(--m-2);
+}
+
+.theme-background div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.theme-background div button {
+	padding: 0.8rem 0.2rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: var(--btn-border-radius);
+	font-weight: 600;
+	background: var(--color-base-100);
+	color: var(--color-base-content);
+}
+
+.theme-background div button.active {
+	border: 2px solid var(--color-primary);
+}
+
+@media (max-width: 40rem) {
+	.theme-dialog {
+		padding-inline: 0.5rem;
+	}
+}

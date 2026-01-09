@@ -1,0 +1,45 @@
+---
+import { Icon } from 'astro-icon/components'
+import NAV_ITEMS from '~/static/nav-items'
+import '~/styles/navbar.css'
+---
+
+<header id='header' class='header'>
+	<nav class='nav container px-15'>
+		<div class='nav-logo'>
+			<h2>DatabyKaKa</h2>
+		</div>
+
+		<div id='nav-menu'>
+			<button aria-label='close nav-bar' id='btn-close-nav'>
+				<Icon name='navbar-close' size='1.5rem' />
+			</button>
+
+			<div class='nav-list'>
+				{
+					NAV_ITEMS.map((item) => (
+						<a href={item.href} class='nav-link nav-item'>
+							{item.name}
+						</a>
+					))
+				}
+			</div>
+		</div>
+
+		<div class='nav-btn-group'>
+			<button
+				id='btn-open-theme'
+				aria-label='open theme panel'
+				onclick="document.getElementById('theme-dialog').showModal()"
+			>
+				<Icon name='navbar-theme' size='1.5rem' />
+			</button>
+
+			<button id='btn-open-nav' aria-label='opn nav bar'>
+				<Icon name='navbar-open' size='1.5rem' />
+			</button>
+		</div>
+	</nav>
+</header>
+
+<script src='~/scripts/navbar'></script>

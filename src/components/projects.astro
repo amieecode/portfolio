@@ -1,0 +1,132 @@
+---
+import { Icon } from 'astro-icon/components'
+import Image from 'astro/components/Image.astro'
+import PROJECTS from '~/static/projects'
+
+import '~/styles/projects.css'
+---
+
+<section class='projects section' id='projects'>
+	<div class='container'>
+		<h2 class='section-title px-15'>Projects</h2>
+
+		<div class='projects-container'>
+			{
+				PROJECTS.map((project) => (
+					<div class='project-card'>
+						<Image
+							inferSize
+							src={project.thumbnail}
+							alt={project.name}
+							class='project-img'
+							loading='lazy'
+							crossorigin='anonymous'
+						/>
+
+						<div class='project-card-hover'>
+							<h3 class='project-title'>{project.name}</h3>
+
+							<ul class='project-tags-container'>
+								{project.tags.map((tag) => (
+									<li class='project-tag'>{tag}</li>
+								))}
+							</ul>
+
+							<div class='project-buttons'>
+								<div class='project-buttons-group'>
+									<span class='circular-Button-no-hover'>
+										<Icon
+											name='projects-external-link'
+											size='1.25rem'
+										/>
+									</span>
+									<div class='project-buttons-group-links'>
+										{project.links.map((link, i) => (
+											<a
+												aria-label={`link ${i}`}
+												href={link}
+												rel='noreferrer'
+												target='_blank'
+											>
+												{i + 1}
+											</a>
+										))}
+									</div>
+								</div>
+
+								<a
+									aria-label='project repo'
+									href={
+										project.repo ??
+										'https://github.com/amieecode'
+									}
+									rel='noreferrer'
+									target='_blank'
+									class:list={{ disabled: !project.repo }}
+								>
+									<Icon
+										name='projects-github'
+										size='1.25rem'
+									/>
+								</a>
+
+								<button
+									aria-label='open gallery slider'
+									class='circular-Button gallery-opener'
+									data-images={JSON.stringify(project.images)}
+								>
+									<Icon
+										name='projects-gallery'
+										size='1.25rem'
+									/>
+								</button>
+							</div>
+						</div>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<dialog class='gallery-slider'>
+	<div class='gallery-slider-container'>
+		<button
+			aria-label='close'
+			class='close-button circular-Button'
+			data-action='close'
+		>
+			<Icon name='projects-gallery-close' size='1.25rem' />
+		</button>
+
+		<button
+			aria-label='back'
+			class='back-button circular-Button'
+			data-action='back'
+		>
+			<Icon name='projects-gallery-back' size='1.25rem' />
+		</button>
+
+		<button
+			aria-label='next'
+			class='forward-button circular-Button'
+			data-action='next'
+		>
+			<Icon name='projects-gallery-next' size='1.25rem' />
+		</button>
+
+		<div class='gallery-slider-middle-section'>
+			<div class='loader'></div>
+			<img
+				loading='eager'
+				crossorigin='anonymous'
+				alt='gallery'
+				src=''
+				class='hide'
+			/>
+		</div>
+		<div class='gallery-slider-circles bottom-section'></div>
+	</div>
+</dialog>
+
+<script src='~/scripts/projects'></script>

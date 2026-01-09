@@ -1,0 +1,32 @@
+---
+import '~/styles/global.css'
+import '~/styles/vars.css'
+
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang='en' data-primary='ruby' data-bg='dark' data-font-size='base'>
+	<head>
+		<script is:inline>
+			Object.assign(document.documentElement.dataset, {
+				fontSize: localStorage.getItem('font-size') ?? 'base',
+				primary: localStorage.getItem('primary') ?? 'ruby',
+				bg: localStorage.getItem('bg') ?? 'dark',
+			})
+		</script>
+		<meta charset='UTF-8' />
+		<meta name='description' content='Enwelum Chiamaka Portfolio' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/portfolio/favicon.ico' />
+		<meta name='generator' content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

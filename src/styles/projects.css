@@ -1,0 +1,259 @@
+#projects .container {
+	max-width: 100%;
+	padding-inline: 4rem;
+}
+
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.project-card {
+	position: relative;
+	aspect-ratio: 16 / 9;
+	border-radius: var(--card-border-radius);
+	overflow: hidden;
+	text-align: center;
+
+	container-type: inline-size;
+	container-name: project-card;
+}
+
+.project-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	z-index: 1;
+}
+
+.project-card:hover::before {
+	opacity: 1;
+}
+
+.project-card-hover {
+	z-index: 2;
+	position: absolute;
+	inset: 0;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-card-hover {
+	opacity: 1;
+}
+
+.project-title {
+	color: white;
+	font-size: 2rem;
+	line-height: normal;
+	text-wrap: balance;
+}
+
+.project-tags-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	padding-inline: 0.5rem;
+	overflow-y: auto;
+}
+
+.project-tag {
+	background-color: var(--color-primary);
+	padding: 0.25rem 1rem;
+	border-radius: 0.75rem;
+	color: white;
+	font-size: small;
+}
+
+.project-buttons {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.circular-Button-no-hover,
+.circular-Button,
+.project-buttons a {
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	color: white;
+	transition: filter 0.3s ease-in-out;
+}
+
+.project-buttons-group-links {
+	position: absolute;
+	bottom: 50%;
+	translate: 0 50%;
+	display: flex;
+	gap: 0.5rem;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.project-buttons-group:hover .project-buttons-group-links {
+	opacity: 1;
+}
+
+.project-buttons a.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.8;
+	filter: grayscale(100%);
+}
+
+.circular-Button:hover,
+.project-buttons a:hover {
+	filter: brightness(150%);
+}
+
+.circular-Button svg,
+.project-buttons svg {
+	fill: white;
+}
+
+.project-buttons-group {
+	position: relative;
+	gap: 0.5rem;
+}
+
+.gallery-slider {
+	border: none;
+	padding: 0;
+	background: transparent;
+	color: white;
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+.gallery-slider::backdrop {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-slider-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+.gallery-slider-circles button:hover,
+.gallery-slider-circle-active {
+	filter: brightness(150%);
+	transition: filter ease-in-out 0.3s;
+}
+
+.close-button,
+.back-button,
+.forward-button {
+	position: absolute;
+	z-index: 1;
+}
+
+.close-button {
+	left: 1rem;
+	top: 1rem;
+}
+
+.back-button {
+	left: 1rem;
+	bottom: 50%;
+	translate: 0 50%;
+}
+
+.forward-button {
+	right: 1rem;
+	bottom: 50%;
+	translate: 0 50%;
+}
+
+.gallery-slider-middle-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-slider-circles {
+	position: absolute;
+	bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.gallery-slider-circles button {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+	cursor: pointer;
+}
+
+.gallery-slider-middle-section img {
+	max-height: calc(100vh - 64px);
+}
+
+.hide {
+	display: none;
+}
+
+.loader {
+	border: 6px solid #f3f3f3;
+	border-top: 6px solid var(--color-primary);
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 2s linear infinite;
+	position: absolute;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 64rem) {
+	.projects-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 40rem) {
+	#projects .container {
+		padding-inline: 1rem;
+	}
+	.projects-container {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+@container project-card (max-width: 26rem) {
+	.project-tags-container {
+		display: none;
+	}
+	.project-card-hover {
+		justify-content: space-around;
+	}
+}
