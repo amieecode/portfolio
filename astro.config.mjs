@@ -7,6 +7,6 @@ export default defineConfig({
 	server: {
 		port: 3000,
 	},
-	site: 'https://riyadh-dev.github.io',
-	base: '/portfolio',
+	site: 'https://amieecode.github.io',
+	base: '/kaka-portfolio',
 })
