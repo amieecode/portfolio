@@ -8,5 +8,5 @@ export default defineConfig({
 		port: 3000,
 	},
 	site: 'https://amieecode.github.io',
-	base: '/kaka-portfolio',
+	base: '/portfolio',
 })
