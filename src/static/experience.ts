@@ -24,7 +24,7 @@ export default [
 	{
 		isWork: true,
 		period: 'Feb 2023 - May 2023',
-		company: 'Octave Incorporations',
+		company: 'OCTAVE INCORPORATIONS',
 		jobTitle: 'Data Analyst Intern',
 		description: [
 			'Cleaned, validated, and structured datasets for analysis.',
@@ -34,22 +34,14 @@ export default [
 	},
 	{
 		isWork: true,
-		period: 'January 2023 - October2024',
-		company: 'Freelancing',
-		jobTitle: 'Frontend Developer',
+		period: 'November 2019 - January 2023',
+		company: 'GIFTED COMPUTER SCHOOL',
+		jobTitle: 'Student',
 		description: [
+			'Learned the basics of programming and web development',
+			'Completed courses on various programming languages and technologies',
 			'Designed and developed some simple applications for local small business',
-		],
-	},
-	{
-		isWork: false,
-		period: 'November 2022',
-		company:
-			'Ebonyi State University Abakaliki,Nigeria',
-		jobTitle: 'Degree',
-		description: [
-			'Bachelor’s in Computer Engineering.',
-			'Developed a Tomatoes Greenhouse system in partial fulfillment of the degree.',
+
 		],
 	},
 	

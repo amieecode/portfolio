@@ -68,21 +68,6 @@ export default [
 	},
 
 	{
-		name: 'Porter Food Delivery Analysis',
-		links: ['/#'],
-		repo: ['https://github.com/amieecode/porter_food_delivery'],
-		thumbnail: IMAGE_LINKS.projects['portery-food-analysis'][0],
-		images: IMAGE_LINKS.projects['portery-food-analysis'],
-		tags: [
-			'Excel',
-			'Power BI',
-			'Data cleaning',
-			'Dax',
-			'Visualization',
-		],
-	},
-
-	{
 		name: 'Hospital Readmissions Pattern',
 		links: ['/#'],
 		repo: 'https://github.com/amieecode/hospital_readmission_patterns',
@@ -98,6 +83,21 @@ export default [
 		thumbnail: IMAGE_LINKS.projects['google-play-store-analysis'][0],
 		images: IMAGE_LINKS.projects['google-play-store-analysis'],
 		tags: ['Excel', 'Power BI', 'Tableau', 'LookerStudio', 'Data cleaning'],
+	},
+
+	{
+		name: 'Porter Food Delivery Analysis',
+		links: ['/#'],
+		repo: ['https://github.com/amieecode/porter_food_delivery'],
+		thumbnail: IMAGE_LINKS.projects['portery-food-analysis'][0],
+		images: IMAGE_LINKS.projects['portery-food-analysis'],
+		tags: [
+			'Excel',
+			'Power BI',
+			'Data cleaning',
+			'Dax',
+			'Visualization',
+		],
 	},
 
 	{

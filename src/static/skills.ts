@@ -1,6 +1,6 @@
 import python from '~/assets/images/logos/python.png'
 import sql from '~/assets/images/logos/sql.png'
-import excel from '~/assets/images/logos/excel.jpeg'
+import excel from '~/assets/images/logos/excel.png'
 import powerBI from '~/assets/images/logos/powerbi.png'
 import tableau from '~/assets/images/logos/tableau.png'
 import lookerStudio from '~/assets/images/logos/lookerStudio.png'
@@ -12,50 +12,43 @@ import statistics from '~/assets/images/logos/statistics.png'
 import git from '~/assets/images/logos/git.png'
 import github from '~/assets/images/logos/github.png'
 import webScraping from '~/assets/images/logos/webscraping.png'
+import css from '~/assets/images/logos/css.png'
+import javascript from '~/assets/images/logos/js.png'
+import react from '~/assets/images/logos/react.svg'
+import tailwind from '~/assets/images/logos/tailwind.svg'
+import html from '~/assets/images/logos/html.png'
 
 export default [
-  {
-    catName: 'Data Analysis & Processing',
-    catImageName: 'analysis',
-    skills: [
-      { name: 'Data Cleaning', image: pandas },
-      { name: 'Exploratory Data Analysis (EDA)', image: matplotlib },
-      { name: 'Feature Engineering', image: numpy },
-      { name: 'Data Validation', image: statistics },
-      { name: 'KPI Analysis', image: excel },
-    ],
-  },
-  {
-    catName: 'Programming & Querying',
-    catImageName: 'programming',
+{
+    catName: 'Programming',
+    catImageName: 'backend',
     skills: [
       { name: 'Python', image: python },
       { name: 'SQL', image: sql },
       { name: 'Excel', image: excel },
-    ],
-  },
-  {
-    catName: 'Visualization & BI',
-    catImageName: 'visualization',
-    skills: [
-      { name: 'Power BI', image: powerBI },
-      { name: 'Tableau', image: tableau },
-      { name: 'Looker Studio', image: lookerStudio },
-    ],
-  },
-  {
-    catName: 'Analytics Techniques',
-    catImageName: 'analytics',
-    skills: [
+      { name: 'Data Cleaning', image: pandas },
+      { name: 'EDA', image: matplotlib },
+      { name: 'Feature Engineering', image: numpy },
       { name: 'Descriptive & Inferential Statistics', image: statistics },
       { name: 'Regression Analysis', image: scikit },
       { name: 'Clustering', image: scikit },
       { name: 'Predictive Modeling', image: scikit },
     ],
   },
+
   {
-    catName: 'Tools & Workflow',
-    catImageName: 'tools',
+    catName: 'Visualization',
+    catImageName: 'desktop',
+    skills: [
+      { name: 'Power BI', image: powerBI },
+      { name: 'Tableau', image: tableau },
+      { name: 'Looker Studio', image: lookerStudio },
+    ],
+  },
+
+  {
+    catName: 'Tools',
+    catImageName: 'frontend',
     skills: [
       { name: 'Git', image: git },
       { name: 'GitHub', image: github },
@@ -63,13 +56,14 @@ export default [
     ],
   },
   {
-    catName: 'Professional Strengths',
-    catImageName: 'softskills',
+    catName: 'Other Skill',
+    catImageName: 'other',
     skills: [
-      { name: 'Communication', image: github },
-      { name: 'Stakeholder Reporting', image: github },
-      { name: 'Problem-Solving', image: github },
-      { name: 'Collaboration', image: github },
+      { name: 'React', image: react },
+      { name: 'Tailwind', image: tailwind },
+      { name: 'Javascript', image: javascript },
+			{ name: 'CSS', image: css },
+      { name: 'HTML', image: html },
     ],
   },
 ]
