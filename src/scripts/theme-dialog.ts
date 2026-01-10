@@ -20,10 +20,10 @@ for (const btn of fontBtns)
 
 for (const btn of primaryBtns)
 	btn.addEventListener('click', () => {
-		localStorage.setItem('primary', btn.dataset.primary ?? 'rose')
+		localStorage.setItem('primary', btn.dataset.primary ?? 'indigo')
 		document.documentElement.setAttribute(
 			'data-primary',
-			btn.dataset.primary ?? 'rose'
+			btn.dataset.primary ?? 'indigo'
 		)
 		updatePrimaryBtns()
 	})
