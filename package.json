@@ -36,9 +36,7 @@
 		"sharp": "^0.34.3",
 		"typescript-eslint": "^8.37.0"
 	},
-
-	
-	
+	"packageManager": "",
 	"lint-staged": {
 		"*": [
 			"cspell --cache",
