@@ -20,7 +20,7 @@ import html from '~/assets/images/logos/html.png'
 
 export default [
 {
-    catName: 'Programming',
+    catName: 'Analysis',
     catImageName: 'backend',
     skills: [
       { name: 'Python', image: python },
