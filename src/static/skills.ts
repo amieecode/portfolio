@@ -1,7 +1,7 @@
 import python from '~/assets/images/logos/python.png'
 import sql from '~/assets/images/logos/sql.png'
 import excel from '~/assets/images/logos/excel.png'
-import powerBI from '~/assets/images/logos/powerbi.png'
+import powerbi from '~/assets/images/logos/powerbi.png'
 import tableau from '~/assets/images/logos/tableau.png'
 import lookerStudio from '~/assets/images/logos/lookerStudio.png'
 import pandas from '~/assets/images/logos/pandas.png'
@@ -40,7 +40,7 @@ export default [
     catName: 'Visualization',
     catImageName: 'desktop',
     skills: [
-      { name: 'Power BI', image: powerBI },
+      { name: 'Power BI', image: powerbi },
       { name: 'Tableau', image: tableau },
       { name: 'Looker Studio', image: lookerStudio },
     ],
