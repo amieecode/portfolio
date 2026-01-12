@@ -3,7 +3,7 @@ import sql from '~/assets/images/logos/sql.png'
 import excel from '~/assets/images/logos/excel.png'
 import powerbi from '~/assets/images/logos/powerbi.png'
 import tableau from '~/assets/images/logos/tableau.png'
-import lookerStudio from '~/assets/images/logos/lookerStudio.png'
+import lookerstudio from '~/assets/images/logos/lookerstudio.png'
 import pandas from '~/assets/images/logos/pandas.png'
 import numpy from '~/assets/images/logos/numpy.png'
 import matplotlib from '~/assets/images/logos/matplotlib.png'
@@ -11,7 +11,7 @@ import scikit from '~/assets/images/logos/scikitlearn.png'
 import statistics from '~/assets/images/logos/statistics.png'
 import git from '~/assets/images/logos/git.png'
 import github from '~/assets/images/logos/github.png'
-import webScraping from '~/assets/images/logos/webscraping.png'
+import webscraping from '~/assets/images/logos/webscraping.png'
 import css from '~/assets/images/logos/css.png'
 import javascript from '~/assets/images/logos/js.png'
 import react from '~/assets/images/logos/react.svg'
@@ -42,7 +42,7 @@ export default [
     skills: [
       { name: 'Power BI', image: powerbi },
       { name: 'Tableau', image: tableau },
-      { name: 'Looker Studio', image: lookerStudio },
+      { name: 'Looker Studio', image: lookerstudio },
     ],
   },
 
@@ -52,7 +52,7 @@ export default [
     skills: [
       { name: 'Git', image: git },
       { name: 'GitHub', image: github },
-      { name: 'Web Scraping', image: webScraping },
+      { name: 'Web Scraping', image: webscraping },
     ],
   },
   {
