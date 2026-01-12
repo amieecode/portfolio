@@ -16,8 +16,8 @@ export default [
 		href: '#skills',
 	},
 	{
-		name: 'Certification',
-		href: '#certification',
+		name: 'Certifications',
+		href: '#certifications',
 	},
 	{
 		name: 'Contact',
