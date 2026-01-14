@@ -8,6 +8,10 @@ export default [
 		href: '#about',
 	},
 	{
+		name: 'Certifications',
+		href: '#certifications',
+	},
+	{
 		name: 'Projects',
 		href: '#projects',
 	},
@@ -15,10 +19,7 @@ export default [
 		name: 'Skills',
 		href: '#skills',
 	},
-	{
-		name: 'Certifications',
-		href: '#certifications',
-	},
+	
 	{
 		name: 'Contact',
 		href: '#contact',

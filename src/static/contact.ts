@@ -1,5 +1,5 @@
 export default {
-	phoneNumber: '+234 705 761 9705',
+	phoneNumber: '+234 9135379780',
 	email: 'enwelumchiamaka@gmail.com',
 	github: 'https://github.com/amieecode',
 	linkedin: 'https://www.linkedin.com/in/enwelum-chiamaka/',

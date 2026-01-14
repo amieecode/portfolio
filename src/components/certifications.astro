@@ -1,0 +1,21 @@
+---
+import CERTIFICATIONS from '~/static/certifications'
+import '~/styles/certifications.css'
+---
+
+<section class="certifications section" id="certifications">
+    <div class="container">
+        <h2 class="section-title px-15">Certifications</h2>
+        <div class='cert-grid'>
+            {CERTIFICATIONS.slice(0, 3).map(cert => (
+                <div class='cert-card'>
+                    <div class='cert-content'>
+                        <h3 class='cert-title'>{cert.title}</h3>
+                        <p class='cert-issuer'>{cert.issuer}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+
+</section>
