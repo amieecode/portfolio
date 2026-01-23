@@ -23,7 +23,7 @@ export default [
 		name: 'Heart Health Analysis',
 		links: ['/#'],
 		repo: 'https://github.com/amieecode/heart-health-analysis',
-		thumbnail: IMAGE_LINKS.projects['heart-health-analysis'][1],
+		thumbnail: IMAGE_LINKS.projects['heart-health-analysis'][0],
 		images: IMAGE_LINKS.projects['heart-health-analysis'],
 		tags: [
 			'EDA',

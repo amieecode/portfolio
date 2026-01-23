@@ -21,9 +21,9 @@ export default {
 		],
 
 		'heart-health-analysis': [
-			`${ROOT_URL}/v1767881954/Elite_Hotel_3_cfuqe0.png`,
-			`${ROOT_URL}/v1767881954/Elite_Hotel_3_cfuqe0.png`,
-			`${ROOT_URL}/v1767881954/Elite_Hotel_3_cfuqe0.png`,
+			`${ROOT_URL}/v1769167622/Heart_health_sxeczp.png`,
+			`${ROOT_URL}/v1769167622/Heart_Health_2_ygwj0s.png`,
+			`${ROOT_URL}/v1769167928/Heart_health_Insight_ubvqhx.png`,
 		],
 
 		'telecom-churn-analysis': [
