@@ -12,7 +12,7 @@ export default [
 
 	{
 		name: 'Elite Hotel Operations Analysis',
-		links: ['/#'],
+		links: ['https://app.powerbi.com/links/gGhIPceXUa?ctid=8f915dc1-e48d-428b-b692-388cd2706a64&pbi_source=linkShare'],
 		repo: 'https://github.com/amieecode/hotel-operations-analysis',
 		thumbnail: IMAGE_LINKS.projects['hotel-operations-analysis'][0],
 		images: IMAGE_LINKS.projects['hotel-operations-analysis'],
@@ -21,7 +21,7 @@ export default [
 
 	{
 		name: 'Heart Health Analysis',
-		links: ['/#'],
+		links: ['https://app.powerbi.com/links/8dwAE3pkEg?ctid=8f915dc1-e48d-428b-b692-388cd2706a64&pbi_source=linkShare&bookmarkGuid=da824233-9b81-473c-8a8e-be31f6f417a2'],
 		repo: 'https://github.com/amieecode/heart-health-analysis',
 		thumbnail: IMAGE_LINKS.projects['heart-health-analysis'][0],
 		images: IMAGE_LINKS.projects['heart-health-analysis'],
