@@ -3,22 +3,26 @@ export default [
 		isWork: true,
 		period: '2025 - Present',
 		company: 'JOBAAJ LEARNING',
-		jobTitle: 'Junior Data Analyst',
+		jobTitle: 'Data Analyst',
 		description: [
 			'Analyzed datasets using Python, SQL, and Excel to uncover trends and patterns that informed reporting and visualization.',
-      		'Built analytical reports and dashboards, translating insights into clear documentation for stakeholders.',
-      		'Collaborated with team members to support data-driven decision-making across projects.',
+			'Used SQL and Power BI to examine turnaround times, task completion rates, and cost patterns, surfacing actionable insights for stakeholders.',
+			'Design and maintain dashboards to monitor operational performance and flag workflow bottlenecks in real time.',
+			'Clean and validate datasets by resolving missing values, duplicates, and formatting inconsistencies, improving overall reporting accuracy.',
+			'Identified inefficiencies in task allocation and workflows, contributing to a 10% reduction in project costs.',
 		],
 	},
 	{
 		isWork: true,
 		period: 'December 2024 - April 2025',
 		company: 'ERA TECHNOLOGIES',
-		jobTitle: 'Front-end web developer',
+		jobTitle: 'Junior Data Analyst',
 		description: [
-			'Designed and developed interactive web dashboards and applications using React, TailwindCSS, and JavaScript.',
-      		'Integrated APIs and data visualization libraries to deliver dynamic and responsive interfaces.',
-      		'Built portfolio projects that demonstrate both frontend and backend development skills.',
+			'Cleaned and structured 2,000+ weekly operational records using SQL and Excel, resolving duplicates and inconsistent formatting to ensure data integrity.',
+			'Built Power BI dashboards using star schema modelling and DAX measures to track the full task lifecycle from assignment through to completion.',
+			'Analysed operational data to pinpoint delays in task completion and cost inefficiencies across workflows, delivering targeted recommendations.',
+			'Performed data validation checks (null values, duplicates, and referential integrity) to improve KPI reporting reliability.',
+			'Weekly reporting using Excel Power Query, reducing manual reporting effort by 3 hours per week.'
 		],
 	},
 	{
@@ -27,22 +31,13 @@ export default [
 		company: 'OCTAVE INCORPORATIONS',
 		jobTitle: 'Data Analyst Intern',
 		description: [
-			'Cleaned, validated, and structured datasets for analysis.',
-      		'Performed exploratory data analysis (EDA) to uncover business trends.',
-      		'Presented findings using visual reports and charts.',
-		],
-	},
-	{
-		isWork: true,
-		period: 'November 2019 - January 2023',
-		company: 'GIFTED COMPUTER SCHOOL',
-		jobTitle: 'Student',
-		description: [
-			'Learned the basics of programming and web development',
-			'Completed courses on various programming languages and technologies',
-			'Designed and developed some simple applications for local small business',
+			'Cleaned and validated datasets using Excel and Power BI, resolving missing values, duplicates, and formatting inconsistencies to ensure data quality ahead of analysis.',
+      		'Applied data modelling techniques in Power BI to structure datasets for reliable, consistent reporting.',
+      		'Explored datasets to identify trends, patterns, and outliers using Excel and Power BI, helping uncover insights from the data',
+			'Built interactive Power BI dashboards and visual reports to communicate findings clearly to non-technical stakeholders.'
 
 		],
 	},
+	
 	
 ] as const
