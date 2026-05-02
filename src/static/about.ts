@@ -1,6 +1,6 @@
 export default {
 	introduction:
-		'Data Analyst with a diploma in data and business analytics, experienced in transforming raw data into actionable insights. I have hands-on experience in data cleaning, analysis, visualization, and reporting, working on projects across telecom, HR, e-commerce, and healthcare. Proficient in Python, SQL, Excel, Power BI, Tableau, and Looker Studio, I am a self-motivated and fast learner with a passion for solving complex problems and leveraging data to drive informed decisions. I welcome new challenges that will further sharpen my analytical and problem-solving skills.',
+		'A data analyst specialising in product and operational analytics. I work with SQL, Python, and Power BI to turn messy, large-scale datasets into decisions that actually get acted on. I have analysed everything from 100K+ trial user records to weekly operational workflows to finding the churn drivers, cost inefficiencies, and activation gaps that are not obvious until someone goes looking. That is the part I enjoy most. I am available for remote roles globally, and currently open to full-time data analyst opportunities.',
 	projectsDone: '+ 10',
 	gitHubCommits: '+ 600',
 } as const
