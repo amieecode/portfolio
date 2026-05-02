@@ -35,8 +35,8 @@ export default {
 		],
 
 		'retail-customer-behavior-analysis': [
-			`${ROOT_URL}/v1767882394/v1777761275/Retail_Store_analysis_fpcsfx.png`,
-			`${ROOT_URL}/v1767882395/v1777761275/Retail_Store_Analysis_2_oaevrs.png`,
+			`${ROOT_URL}/v1777761275/Retail_Store_analysis_fpcsfx.png`,
+			`${ROOT_URL}/v1777761275/Retail_Store_Analysis_2_oaevrs.png`,
 		],
 		
 		'credit-card-analysis': [
